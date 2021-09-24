@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+font-size: 16px;
+font-family: "Josefin Sans", sans-serif;
+
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+}
+.logo{
+    display: none;
+}
+.mobile-hero{
+    display:none;
+}
+.main-wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    padding:30px;
+}
+.main-wrapper h1{
+   font-weight: 600;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing:18px;
+    align-self: center;
+    width:50%;
+}
+.main-wrapper h1 span {
+color:hsl(0, 36%, 70%);
+font-weight: 300;
+display: block;
+}
+.main-wrapper p {
+
+    align-self: center;
+    width:50%;
+    font-size:1.01rem;
+    line-height: 1.6rem;
+    color:hsl(0, 36%, 70%); 
+}
+header{
+    align-self: center;
+    width:50%;
+}
+header img {
+    width:36%;
+}
+
+form {
+    width:50%;
+    align-self: center;
+}
+.subscription{
+    position: relative; 
+}
+input {
+   display:block;
+   width:100%;
+    border-radius: 30px;
+    padding:16px;
+   border: solid 1px hsla(0, 36%, 70%, 0.603) ;
+ 
+}
+input:focus {
+    border:none;
+}
+input::placeholder{
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+}
+.submit{
+    position: absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:20%;
+    border:none;
+    border-radius: 30px;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    
+}
+
+
+@media only screen and (max-width: 920px) {
+    .main-wrapper{
+      
+        padding:0px;
+        background-image:none;
+        justify-content:space-around;
+        
+    }
+    .main-wrapper h1{
+        font-size: 50px;
+        padding-top:80px;
+        padding-bottom:40px;
+     text-align: center;
+     width:100%;
+     letter-spacing: 12px;
+    }
+    .main-wrapper p{
+      
+        text-align: center;
+        width:70%;
+
+       }
+    header{
+     width:100%;
+   
+    }
+    header img{
+        width:25%;
+        margin:20px 40px;
+    }
+    .mobile-hero{
+        display: block;
+        width: 100%;
+    }
+    .desktop-hero {
+        display:none;
+    }
+    form {
+        padding-top:40px;
+    }
+    .attribution{
+        padding-top: 120px;
+    }
+ 
+ 
+}
